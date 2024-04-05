@@ -1,0 +1,172 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+body{
+    background: #D47531;
+}
+.navbar{
+    position: relative;
+    top: 0;
+    left: 0;
+    padding: 30px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar .amyal{
+    color: rgb(131, 98, 51);
+    font-weight: bold;
+    font-size: 2em;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 2px;
+}
+
+.navbar ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar li{
+    list-style: none;
+    margin-left: 20px;
+}
+
+.navbar a{
+    text-decoration: none;
+    padding: 6px 15px;
+    color: white;
+    border-radius: 20px;
+}
+
+.navbar ul li a:hover{
+    background: white;
+    color: #65451F;
+}
+
+.container {
+    text-align: center;
+    height: 100vh;
+    background-image: url("pics/background.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat
+
+}
+
+.header {
+    padding-top: 30px;
+    color: #dfdfdf;
+    font-size: 20px;
+    margin: auto;
+    line-height: 50px;
+}
+
+.sub-container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 30px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.teams {
+    margin: 10px;
+    padding: 22px;
+    max-width: 30%;
+    cursor: pointer;
+    transition: 0.4s;
+    box-sizing: border-box;
+    background:#E7C188 ;
+}
+
+.teams:hover {
+    background: #ddd;
+    border-radius: 12px;
+}
+
+.teams img {
+    width: 200px;
+    height: 200px;
+}
+
+.name {
+
+    padding: 12px;
+    font-weight: bold;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+.desig {
+    font-style: italic;
+    color: #888;
+}
+
+.about {
+    margin: 20px 0;
+    font-weight: lighter;
+    color: #4e4e4e;
+}
+
+.social-links {
+    margin: 14px;
+}
+
+.social-links a {
+    display: inline-block;
+    height: 30px;
+    width: 30px;
+    transition: .4s;
+}
+
+.social-links a:hover {
+    transform: scale(1.5);
+}
+
+.social-links a i {
+    color: #444;
+}
+
+footer{ 
+    text-align: center;
+    background-color: #7f5033;
+    color: rgb(255, 255, 255);
+    margin-top: 20px;
+    padding-top: 10px;
+    font-size: small;
+}
+
+.webName{ 
+    font-size: large; 
+}
+
+a{ 
+    color:white;
+    padding-left: 1%;
+    padding-right: 1%;
+    text-decoration: none;
+}
+
+a:hover{ 
+    color: rgb(209, 207, 207);
+}
+
+.cobyright{
+    background-color: rgb(88, 62, 46);
+    text-align: center;
+    font-size: smaller;
+    padding: 5px;
+}
+
+@media screen and (max-width: 600px) {
+    .teams {
+        max-width: 100%;
+    }
+}

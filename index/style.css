@@ -1,0 +1,262 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+body{
+    font-family: 'Roboto', sans-serif;
+    min-height: 100vh;
+    background: linear-gradient(#2e1a11, #6c3c09);
+    margin: 0;
+    padding: 0;
+}
+
+/*---------------- container ----------------*/
+.container{
+    height: 100vh;
+    background-image: url(pics/sahara.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/*---------------- nav ----------------*/
+.navbar{
+    position: relative;
+    top: 0;
+    left: 0;
+    padding: 30px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar .amyal{
+    color: white;
+    font-weight: bold;
+    font-size: 2em;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 2px;
+}
+
+.navbar ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar li{
+    list-style: none;
+    margin-left: 20px;
+}
+
+.navbar a{
+    text-decoration: none;
+    padding: 6px 15px;
+    color: white;
+    border-radius: 20px;
+}
+
+.navbar ul li a:hover{
+    background: white;
+    color: #65451F;
+}
+
+/*----------------describtion col text----------------*/
+
+.describtion{
+    display: flex;
+    height: 88%;
+    align-items: center;
+}
+
+.col{
+    flex-basis: 50%;
+    padding-left: 120px; 
+}
+
+.col h1{
+    color: white;
+    font-size: 70px;
+}
+
+.col p{
+    color: white;
+    line-height: 15px;
+}
+
+button{
+    width: 150px; 
+    padding: 12px 0;
+    background: white;
+    border: 0;
+    border-radius: 20px;
+    outline: none;
+    margin-top: 10px;
+}
+
+button:hover{
+    background: #5c2d1a;
+    color: white;
+}
+
+/*----------------describtion col img----------------*/
+.card{
+    width: 200px;
+    height: 230px;
+    display: inline-block;
+    border-radius: 10px;
+    padding: 15px 25px;
+    box-sizing: border-box;
+    cursor: pointer;
+    margin: 10px 15px;
+    background-position: center;
+    background-size: cover;
+    transition: transform 0.5s;
+}
+
+.card:hover{
+    transform: translateY(-10px);
+}
+
+.img1{
+    background-image: url(pics/riyadh.jpg);
+}
+.img2{
+    background-image: url(pics/jeddah.jpeg);
+}
+.img3{
+    background-image: url(pics/alula.jpg);
+}
+.img4{
+    background-image: url(pics/makkah.jpg);
+}
+
+.card h5{
+    color: white;
+    text-shadow: 0 0 5px #3e2014;
+}
+
+.card p{
+    text-shadow: 0 0 15px #3e2014;
+    font-size: 12px;
+}
+
+/*----------------describtion2 col2 text----------------*/
+.describtion2{
+    display: flex;
+    margin: 100px 0;
+    justify-content: space-between;
+    align-items: center; 
+}
+
+.col2 h1{
+    color: white;
+    font-size: 70px;
+}
+
+.col2 p{
+    color: white;
+    line-height: 15px;
+}
+
+/*----------------describtion2 col2 img----------------*/
+.describtion2 .img{
+    position: relative;
+    flex-basis: 60%;
+    display: flex;
+    align-items: center;
+}
+
+.plane{
+    width: 95%;
+}
+
+.color-box{
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: linear-gradient(#715a4a, rgb(110, 73, 38));
+    border-radius: 0 20px 20px 0;
+    height: 100%;
+    width: 80%;
+    z-index: -1;
+    transform: translateX(-60px);
+}
+
+/*----------------footer----------------*/
+footer{ 
+    text-align: center;
+    background-color: #3d291d;
+    color: rgb(255, 255, 255);
+    margin-top: 20px;
+    padding-top: 10px;
+    font-size: small;
+}
+
+.webName{ 
+    font-size: large; 
+}
+
+a{ 
+    color:white;
+    padding-left: 1%;
+    padding-right: 1%;
+    text-decoration: none;
+}
+
+a:hover{ 
+    color: rgb(209, 207, 207);
+}
+
+.cobyright{
+    background-color: #6d5e5555;
+    text-align: center;
+    font-size: smaller;
+    padding: 5px;
+}
+
+/*----------------media----------------*/
+
+@media (max-width: 992px) {
+
+    .describtion{
+        display: grid;
+        grid-template-columns: repeat(1, 2fr);
+    }
+
+    .img{
+        display: grid;
+        grid-template-columns: repeat(2, 2fr);
+        padding-top: 30px;
+    }
+
+    .col{
+        padding-left: 50px;
+    }
+
+    .text p{
+        padding-right: 80px;
+    }
+
+    .describtion2{
+        flex-direction: column-reverse;
+        margin: 50px 0;
+    }
+
+    .col2{
+        flex-basis: 100%;
+        margin-top: 50px;
+        padding-top: 60px;
+        padding-left: 50px;
+    }
+
+    .plane{
+        width: 60%;
+    }
+
+    .color-box{
+        width: 50%;
+        transform: translateX(-60px);
+    }
+
+}
+

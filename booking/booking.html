@@ -1,0 +1,125 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head> 
+    <title>Booking</title>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!--google font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="navbar"> 
+    <a href="index.html" class = "amyal">Amyal</a>
+    <ul>
+      <li><a href="">Home</a></li> <!--empty-->
+      <li><a href="../about-us/AboutUs.html">About</a></li>
+      <li><a href="../Contact-us/Contactus.html">Contact</a></li>
+    </ul>
+  </div>>
+    <div class="container">
+      
+    <main class="form">
+       <section class="event-info">
+            <h3 class="event-Name">Jeddah Season</h3>
+              <div class="info">
+                <div class="about-event">
+                  <p>City Walk Jeddah is an entertainment complex that 
+                    includes 9 diverse entertainment zones.</p>
+                </div>
+              </div>
+      </section>
+
+      <section class="booking-form">
+
+        <form method="get" action="../index/index.html" autocomplete="off">
+
+        <h3 class="title">Booking</h3>
+
+            <label for="fullname"> Enter Your Name </label>
+            <input type="text" name="fullname" id="fullname" class="input" placeholder="Your Full Name" required> 
+
+
+            <label for="email">Enter Your Email</label>
+            <input type="email" name="email" id="email" class="input" placeholder="example@email.com" pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-z]{2,6}$" required>
+            
+
+          
+            <label for="phone">your Phone Number</label>
+            <input type="tel" name="phone" id="phone" class="input" placeholder="+966 5********" pattern="[0-9]{10}" required >
+
+              
+             <label>how many tickets?</label>
+            <select name="tickets" class="input">
+                <option value="one-ticket">1</option>
+                <option value="two-ticket">2</option>
+                <option value="three-ticket">3</option>
+                <option value="four-ticket">4</option>
+                <option value="five-ticket">5</option>
+                <option value="six-ticket">6</option>
+                <option value="seven-ticket">7</option>
+                <option value="eight-ticket">8</option>
+                <option value="nine-ticket">9</option>
+                <option value="ten-ticket">10</option>
+            </select>
+
+
+          
+            
+            <label for="event-date">Event Date: </label>
+            <input type="date" class="input" id="event-date" name="event-date" value="2023-08-01" min="2023-08-01" max="2024-05-31" required>
+
+            <br><br>
+            <hr>
+            <br>
+            
+            <section>
+            <h3 class="title">Payment information</h3>
+            
+            <label for="fullName">Card Holder Full Name:</label>
+            <input type="text" class="input" id="fullName" name="fullName" placeholder="Your Full Name" required>
+            <label for="creditCardNumber">Credit Card Number:</label>
+            <input type="tel" class="input" id="creditCardNumber" name="creditCardNumber" pattern="[0-9]{16}" placeholder="_ _ _ _  _ _ _ _  _ _ _ _  _ _ _ _" required>
+
+            <label for="expirationDate">Expiration Date:</label>
+            <input type="month" class="input" id="expirationDate" name="expirationDate" required>
+
+            <label for="cvv">CVV:</label>
+            <input type="text" class="input" id="cvv" name="cvv" pattern="[0-9]{3}" placeholder="_ _ _" required>
+            </section>
+            <br>
+            <hr>
+            <br>
+            <div>
+            <label id="label-total" for="total">Total: </label>
+            <input type="text" name="total" id="total" placeholder="eg.100 SAR" readonly>
+            </div>
+            
+            <input type="submit" value="Book" class="booked" >
+        </form>
+      </section>
+    </main>
+</div>
+<br><br><br>
+<footer class="footer">
+          
+  <div class="webName">AMYAL</div>
+  <div class="social">
+    <p>follow us:  
+    <i class="fa fa-facebook-official w3-hover-opacity"></i>
+    <i class="fa fa-instagram w3-hover-opacity"></i>
+    <i class="fa fa-twitter w3-hover-opacity"></i>
+    <i class="fa fa-linkedin w3-hover-opacity"></i></p>
+  
+    <P><a href="#">terms & conditions</a></P>
+  </div>
+
+  <div class = "cobyright">
+    Copyright @2023 All rights reserved.
+  </div>
+</footer>
+</body>
+</html>
