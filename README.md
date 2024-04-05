@@ -1,0 +1,3 @@
+Amyal is a travel website that offers details on all Saudi Arabia's sites, cities, and activities so When a foreigner or local wishes to see the attractions and participate in all the activities in Saudi Arabia but is unaware of what is going on in each city and district or how to get there that's when Amyal come to hand.![Screenshot 2024-04-05 074123](https://github.com/Ln02323/Amyal/assets/145326265/e4442295-c656-428c-994b-c3c0ccf9f7ef)
+![Screenshot 2024-04-05 074214](https://github.com/Ln02323/Amyal/assets/145326265/f0c6c3c6-4532-4884-88ba-39684c21a015)
+![Screenshot 2024-04-05 074235](https://github.com/Ln02323/Amyal/assets/145326265/b5253eb3-2035-4e6a-9be0-1b1f090fc86e)
